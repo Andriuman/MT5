@@ -15,9 +15,9 @@ const Accordion = () => {
   };
 
   return (
-    <div className="bg-slate-700 text-white w-full rounded-lg">
+    <div className="bg-zinc-900 text-white w-full rounded-lg">
       {/* Section 1 */}
-      <div className="border-b border-gray-600">
+      <div className="border-b border-zinc-950">
         <button
           className="flex justify-between items-center w-full p-4 focus:outline-none"
           onClick={() => toggleSection(1)}
@@ -44,7 +44,7 @@ const Accordion = () => {
       </div>
 
       {/* Section 2 */}
-      <div className="border-b border-gray-600">
+      <div className="border-b border-zinc-950">
         <button
           className="flex justify-between items-center w-full p-4 focus:outline-none"
           onClick={() => toggleSection(2)}
@@ -71,7 +71,7 @@ const Accordion = () => {
       </div>
 
       {/* Section 3 */}
-      <div className="border-b border-gray-600">
+      <div className="border-b border-zinc-950">
         <button
           className="flex justify-between items-center w-full p-4 focus:outline-none"
           onClick={() => toggleSection(3)}
@@ -124,7 +124,7 @@ const Accordion = () => {
         </Transition>
 
       {/* Section 1 */}
-      <div className="border-b border-gray-600">
+      <div className="border-b border-zinc-950">
         <button
           className="flex justify-between items-center w-full p-4 focus:outline-none"
           onClick={() => toggleSection(1)}
@@ -152,7 +152,7 @@ const Accordion = () => {
 
 
       {/* Section 1 */}
-      <div className="border-b border-gray-600">
+      <div className="border-b border-zinc-950">
         <button
           className="flex justify-between items-center w-full p-4 focus:outline-none"
           onClick={() => toggleSection(1)}

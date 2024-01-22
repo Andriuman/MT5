@@ -6,15 +6,15 @@ export function HomePage() {
   return (
     <div>
       {/* Div modificado para centrar el texto "Configuración" */}
-      <div className='text-white bg-black flex justify-center items-center h-16 text-2xl'>Configuración</div>
-      <div className="flex h-screen text-white bg-black">
+      <div className='text-white bg-zinc-950 flex justify-center items-center h-16 text-2xl'>Configuración</div>
+      <div className="flex h-screen text-white bg-zinc-950">
         {/* Columna de acordeón a la izquierda */}
-        <div className="w-1/4 bg-black text-white p-4 ">
-          <Acordeon />
+        <div className="w-1/4 bg-zinc-950 text-white p-4 ">
+          <Acordeon/>
         </div>
 
         {/* Columna de información a la derecha */}
-        <div className="w-3/4 bg-black text-white p-4 overflow-y-auto">
+        <div className="w-3/4 bg-zinc-950 text-white p-4 overflow-y-auto">
           {/* Contenedor para el contenido de la información */}
           <div className="max-w-3xl mx-auto">
             {/* Título de la sección */}

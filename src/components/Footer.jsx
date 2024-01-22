@@ -36,7 +36,7 @@ export function Footer() {
   ].join(':') + ' GMT';
 
   return (
-    <footer className="fixed bottom-0 left-0 w-full bg-black text-white p-4 z-10">
+    <footer className="fixed bottom-0 left-0 w-full bg-zinc-950 text-white p-4 z-10">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-right">
           {/* Aquí puede ir el logotipo o cualquier otro contenido que desees en la izquierda */}

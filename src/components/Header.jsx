@@ -10,13 +10,13 @@ import Dropdown from './Dropdown';
 
 const Header = () => {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-zinc-950 text-white">
       <div className="container mx-auto flex items-center justify-between py-2 px-4">
         {/* Logo y selección de mercado */}
         <div className="flex items-center">
           <img src="src/images/mtg.png" alt="Logo" className="h-11 mr-3" />
           <span className="ml-3 text-xl text-white">Deriv MT5</span>
-          <select className="bg-black text-white">
+          <select className="bg-zinc-950 text-white">
             <option>
               <div className="flex items-center">
                 <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />

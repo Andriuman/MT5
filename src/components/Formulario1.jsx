@@ -25,7 +25,7 @@ const Formulario1 = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-black p-6 rounded-lg">
+    <form onSubmit={handleSubmit} className="bg-zinc-950 p-6 rounded-lg">
       <h2 className="text-white text-lg mb-6">Detalles</h2>
       <div className="grid grid-cols-2 gap-4 mb-4">
         <input
@@ -34,7 +34,7 @@ const Formulario1 = () => {
           value={formDetails.nombre}
           onChange={handleChange}
           placeholder="Nombre*"
-          className="bg-gray-700 text-white p-2 rounded-md"
+          className="bg-zinc-900 text-white p-2 rounded-md"
         />
         <input
           type="text"
@@ -42,7 +42,7 @@ const Formulario1 = () => {
           value={formDetails.apellido}
           onChange={handleChange}
           placeholder="Apellido*"
-          className="bg-gray-700 text-white p-2 rounded-md"
+          className="bg-zinc-900 text-white p-2 rounded-md"
         />
       </div>
       <div className="grid grid-cols-1 gap-4 mb-4">
@@ -50,7 +50,7 @@ const Formulario1 = () => {
           name="lugarNacimiento"
           value={formDetails.lugarNacimiento}
           onChange={handleChange}
-          className="bg-gray-700 text-white p-2 rounded-md"
+          className="bg-zinc-900 text-white p-2 rounded-md"
         >
           <option value="">Lugar de nacimiento</option>
           {/* Añade opciones aquí */}
@@ -60,7 +60,7 @@ const Formulario1 = () => {
           name="fechaNacimiento"
           value={formDetails.fechaNacimiento}
           onChange={handleChange}
-          className="bg-gray-700 text-white p-2 rounded-md"
+          className="bg-zinc-900 text-white p-2 rounded-md"
         />
       </div>
       <div className="grid grid-cols-1 gap-4 mb-4">
@@ -68,7 +68,7 @@ const Formulario1 = () => {
           name="nacionalidad"
           value={formDetails.nacionalidad}
           onChange={handleChange}
-          className="bg-gray-700 text-white p-2 rounded-md"
+          className="bg-zinc-900 text-white p-2 rounded-md"
         >
           <option value="">Nacionalidad</option>
           {/* Añade opciones aquí */}
@@ -77,7 +77,7 @@ const Formulario1 = () => {
           name="paisResidencia"
           value={formDetails.paisResidencia}
           onChange={handleChange}
-          className="bg-gray-700 text-white p-2 rounded-md"
+          className="bg-zinc-900 text-white p-2 rounded-md"
         >
           <option value="">País de residencia*</option>
           {/* Añade opciones aquí */}
