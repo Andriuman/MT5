@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import escudo from '../images/escudo.svg';
 import { faUser, faChartBar, faCheckCircle, faShieldAlt, faChevronDown, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Accordion = () => {
@@ -208,7 +209,6 @@ const Accordion = () => {
             >
               Limites de la cuenta
             </button>
-
 
 
             <button
