@@ -1,35 +1,46 @@
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faChartBar, faCheckCircle, faShieldAlt, faChevronDown, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Accordion = () => {
-  const [openSection, setOpenSection] = useState(null);
+  const [isOpenPerfil, setIsOpenPerfil] = useState(false);
+  const [isOpenEvaluaciones, setIsOpenEvaluaciones] = useState(false);
+  const [isOpenVerificacion, setIsOpenVerificacion] = useState(false);
+  const [isOpenSeguridad, setIsOpenSeguridad] = useState(false);
+  const [selectedButton, setSelectedButton] = useState({});
 
   const toggleSection = (section) => {
-    if (openSection === section) {
-      setOpenSection(null);
-    } else {
-      setOpenSection(section);
-    }
+    if (section === 'perfil') setIsOpenPerfil(!isOpenPerfil);
+    if (section === 'evaluaciones') setIsOpenEvaluaciones(!isOpenEvaluaciones);
+    if (section === 'verificacion') setIsOpenVerificacion(!isOpenVerificacion);
+    if (section === 'seguridad') setIsOpenSeguridad(!isOpenSeguridad);
+  };
+
+  const handleButtonClick = (section, buttonName) => {
+    setSelectedButton({
+      section: selectedButton.section === section && selectedButton.button === buttonName ? '' : section,
+      button: selectedButton.button === buttonName ? '' : buttonName,
+    });
   };
 
   return (
-    <div className="bg-zinc-900 text-white w-full rounded-lg">
-      {/* Section 1 */}
-      <div className="border-b border-zinc-950">
+    <div className="bg-[#151717] text-gray-300 w-full rounded-2xl divide-y divide-gray-700 text-left shadow-lg">
+      {/* Sección de Perfil */}
+      <div>
         <button
-          className="flex justify-between items-center w-full p-4 focus:outline-none"
-          onClick={() => toggleSection(1)}
+          className="flex items-center justify-between w-full text-left px-4 py-3 focus:outline-none"
+          onClick={() => toggleSection('perfil')}
         >
-          Datos personales
-          <FontAwesomeIcon 
-            icon={faBell} 
-            className={`h-4 w-4 transform ${openSection === 1 ? 'rotate-180' : ''} transition-transform`}
+          <FontAwesomeIcon icon={faUser} className="h-5 w-5" />
+          <span className="flex-grow px-3">Perfil</span>
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className={`h-4 w-4 transform ${isOpenPerfil ? 'rotate-180' : ''} transition-transform`}
           />
         </button>
         <Transition
-          show={openSection === 1}
+          show={isOpenPerfil}
           enter="transition duration-100 ease-out"
           enterFrom="transform scale-95 opacity-0"
           enterTo="transform scale-100 opacity-100"
@@ -37,26 +48,40 @@ const Accordion = () => {
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <div className="pb-4 px-4">
-            <p>Contenido de Datos personales</p>
+          <div className="px-4 pt-4 pb-2 space-y-2">
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'perfil' && selectedButton.button === 'datosPersonales' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717]'}`}
+              onClick={() => handleButtonClick('perfil', 'datosPersonales')}
+            >
+              Datos personales
+            </button>
+
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'perfil' && selectedButton.button === 'idiomas' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717]'}`}
+              onClick={() => handleButtonClick('perfil', 'idiomas')}
+            >
+              Idiomas
+            </button>
+
           </div>
         </Transition>
       </div>
 
-      {/* Section 2 */}
-      <div className="border-b border-zinc-950">
+      {/* Sección de Evaluaciones */}
+      <div>
         <button
-          className="flex justify-between items-center w-full p-4 focus:outline-none"
-          onClick={() => toggleSection(2)}
+          className="flex items-center justify-between w-full text-left px-4 py-3 focus:outline-none"
+          onClick={() => toggleSection('evaluaciones')}
         >
-          Idiomas
-          <FontAwesomeIcon 
-            icon={faBell} 
-            className={`h-4 w-4 transform ${openSection === 2 ? 'rotate-180' : ''} transition-transform`}
+          <FontAwesomeIcon icon={faChartBar} className="h-5 w-5" />
+          <span className="flex-grow px-3">Evaluaciones</span>
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className={`h-4 w-4 transform ${isOpenEvaluaciones ? 'rotate-180' : ''} transition-transform`}
           />
         </button>
         <Transition
-          show={openSection === 2}
+          show={isOpenEvaluaciones}
           enter="transition duration-100 ease-out"
           enterFrom="transform scale-95 opacity-0"
           enterTo="transform scale-100 opacity-100"
@@ -64,26 +89,40 @@ const Accordion = () => {
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <div className="pb-4 px-4">
-            <p>Contenido de Idiomas</p>
+          <div className="px-4 pt-4 pb-2 space-y-2">
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'evaluaciones' && selectedButton.button === 'evaluacionTrading' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('evaluaciones', 'evaluacionTrading')}
+            >
+              Evaluación de trading
+            </button>
+
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'evaluaciones' && selectedButton.button === 'evaluacionFinanciera' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('evaluaciones', 'evaluacionFinanciera')}
+            >
+              Evaluación financiera
+            </button>
+
           </div>
         </Transition>
       </div>
 
-      {/* Section 3 */}
-      <div className="border-b border-zinc-950">
+      {/* Sección de Verificación */}
+      <div>
         <button
-          className="flex justify-between items-center w-full p-4 focus:outline-none"
-          onClick={() => toggleSection(3)}
+          className="flex items-center justify-between w-full text-left px-4 py-3 focus:outline-none"
+          onClick={() => toggleSection('verificacion')}
         >
-          Evaluaciones
-          <FontAwesomeIcon 
-            icon={faBell} 
-            className={`h-4 w-4 transform ${openSection === 3 ? 'rotate-180' : ''} transition-transform`}
+          <FontAwesomeIcon icon={faCheckCircle} className="h-5 w-5" />
+          <span className="flex-grow px-3">Verificación</span>
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className={`h-4 w-4 transform ${isOpenVerificacion ? 'rotate-180' : ''} transition-transform`}
           />
         </button>
         <Transition
-          show={openSection === 3}
+          show={isOpenVerificacion}
           enter="transition duration-100 ease-out"
           enterFrom="transform scale-95 opacity-0"
           enterTo="transform scale-100 opacity-100"
@@ -91,26 +130,56 @@ const Accordion = () => {
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <div className="pb-4 px-4">
-            <p>Contenido de Evaluaciones</p>
+          <div className="px-4 pt-4 pb-2 space-y-2">
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'verificacion' && selectedButton.button === 'pruebaIdentidad' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('verificacion', 'pruebaIdentidad')}
+            >
+              Prueba de identidad
+            </button>
+
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'verificacion' && selectedButton.button === 'pruebaDomicilio' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('verificacion', 'pruebaDomicilio')}
+            >
+              Prueba de domicilio
+            </button>
+
+
+
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'verificacion' && selectedButton.button === 'Prueba de titularidad' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('verificacion', 'Prueba de titularidad')}
+            >
+              Prueba de titularidad
+            </button>
+
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'verificacion' && selectedButton.button === 'Prueba de ingresos' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('verificacion', 'Prueba de ingresos')}
+            >
+              Prueba de ingresos
+            </button>
+
           </div>
         </Transition>
       </div>
 
-      {/* Section 4 */}
-      <div className="rounded-b-lg">
+      {/* Sección de Seguridad y privacidad */}
+      <div>
         <button
-          className="flex justify-between items-center w-full p-4 focus:outline-none"
-          onClick={() => toggleSection(4)}
+          className="flex items-center justify-between w-full text-left px-4 py-3 focus:outline-none"
+          onClick={() => setIsOpenSeguridad(!isOpenSeguridad)}
         >
-          Seguridad y privacidad
-          <FontAwesomeIcon 
-            icon={faBell} 
-            className={`h-4 w-4 transform ${openSection === 4 ? 'rotate-180' : ''} transition-transform`}
+          <FontAwesomeIcon icon={faShieldAlt} className="h-5 w-5" />
+          <span className="flex-grow px-3">Seguridad y privacidad</span>
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className={`h-4 w-4 transform ${isOpenSeguridad ? 'rotate-180' : ''} transition-transform`}
           />
         </button>
         <Transition
-          show={openSection === 4}
+          show={isOpenSeguridad}
           enter="transition duration-100 ease-out"
           enterFrom="transform scale-95 opacity-0"
           enterTo="transform scale-100 opacity-100"
@@ -118,69 +187,82 @@ const Accordion = () => {
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <div className="pb-4 px-4">
-            <p>Contenido de Seguridad y privacidad</p>
-          </div>
-        </Transition>
+          <div className="px-4 pt-4 pb-2 space-y-2">
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'seguridad' && selectedButton.button === 'Correo electrónico y contraseñas' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('seguridad', 'Correo electrónico y contraseñas')}
+            >
+              Correo electrónico y contraseñas
+            </button>
 
-      {/* Section 1 */}
-      <div className="border-b border-zinc-950">
-        <button
-          className="flex justify-between items-center w-full p-4 focus:outline-none"
-          onClick={() => toggleSection(1)}
-        >
-          Datos personales
-          <FontAwesomeIcon 
-            icon={faBell} 
-            className={`h-4 w-4 transform ${openSection === 1 ? 'rotate-180' : ''} transition-transform`}
-          />
-        </button>
-        <Transition
-          show={openSection === 1}
-          enter="transition duration-100 ease-out"
-          enterFrom="transform scale-95 opacity-0"
-          enterTo="transform scale-100 opacity-100"
-          leave="transition duration-75 ease-out"
-          leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-95 opacity-0"
-        >
-          <div className="pb-4 px-4">
-            <p>Contenido de Datos personales</p>
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'seguridad' && selectedButton.button === 'Autoexclusión' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('seguridad', 'Autoexclusión')}
+            >
+              Autoexclusión
+            </button>
+
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'seguridad' && selectedButton.button === 'Limites de la cuenta' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('seguridad', 'Limites de la cuenta')}
+            >
+              Limites de la cuenta
+            </button>
+
+
+
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'seguridad' && selectedButton.button === 'Historial de accesos' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('seguridad', 'Historial de accesos')}
+            >
+              Historial de accesos
+            </button>
+
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'seguridad' && selectedButton.button === 'Token Api' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('seguridad', 'Token Api')}
+            >
+              Token Api
+            </button>
+
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'seguridad' && selectedButton.button === 'Aplicaciones conectadas' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('seguridad', 'Aplicaciones conectadas')}
+            >
+              Aplicaciones conectadas
+            </button>
+
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'seguridad' && selectedButton.button === 'Autenticación de dos factores' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('seguridad', 'Autenticación de dos factores')}
+            >
+              Autenticación de dos factores
+            </button>
+
+            <button
+              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'seguridad' && selectedButton.button === 'Cierre su cuenta' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+              onClick={() => handleButtonClick('seguridad', 'Cierre su cuenta')}
+            >
+              Cierre su cuenta
+            </button>
+
+
+
+
           </div>
         </Transition>
       </div>
 
-
-      {/* Section 1 */}
-      <div className="border-b border-zinc-950">
+      <div className="mt-4">
         <button
-          className="flex justify-between items-center w-full p-4 focus:outline-none"
-          onClick={() => toggleSection(1)}
+          className="flex items-center justify-center w-full bg-[#151717] text-white py-2 px-4 rounded-lg hover:bg-gray-800"
+          onClick={() => {
+            // Aquí manejas la acción de salir
+          }}
         >
-          Datos personales
-          <FontAwesomeIcon 
-            icon={faBell} 
-            className={`h-4 w-4 transform ${openSection === 1 ? 'rotate-180' : ''} transition-transform`}
-          />
+          <FontAwesomeIcon icon={faSignOutAlt} className="h-5 w-5" />
+          <span className="ml-2">Salir</span>
         </button>
-        <Transition
-          show={openSection === 1}
-          enter="transition duration-100 ease-out"
-          enterFrom="transform scale-95 opacity-0"
-          enterTo="transform scale-100 opacity-100"
-          leave="transition duration-75 ease-out"
-          leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-95 opacity-0"
-        >
-          <div className="pb-4 px-4">
-            <p>Contenido de Datos personales</p>
-          </div>
-        </Transition>
-      </div>
-
-
-
-
       </div>
     </div>
   );
