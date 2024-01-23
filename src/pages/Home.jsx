@@ -11,7 +11,7 @@ export function Home() {
                 <h2 className='containerText text-black text-3xl font-bold'>Materias primas</h2>
                 <button class="bg-red-500 text-white px-4 py-2 rounded-full h-20 text-xl font-semibold">Crear una cuenta demo gratis</button>
             </div>
-            <div className="w-[calc(50%+50px)] flex item-end justify-end h-100"><img src="src\assets\toppng.com-ensando-especialmente-en-las-personas-con-movilidad-imagenes-de-personas-1057x1162.png" className='h-full ' alt="" /></div>
+            <div className="w-[calc(50%+50px)] flex item-end justify-end h-100"><img src="src\images\toppng.com-ensando-especialmente-en-las-personas-con-movilidad-imagenes-de-personas-1057x1162.png" className='h-full ' alt="" /></div>
             <style>
                 {`
           .containerbg {
