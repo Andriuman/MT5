@@ -40,11 +40,11 @@ const Header = () => {
         {/* Enlaces de navegación */}
         <div className="hidden md:flex items-left space-x-4">
           <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-          <a href="#" className="hover:text-gray-300">Trader's Hub</a>
+          <a href="/" className="hover:text-gray-300">Trader's Hub</a>
           <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-          <a href="#" className="hover:text-gray-300">Informes</a>
+          <a href="/posiciones" className="hover:text-gray-300">Informes</a>
           <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-          <a href="#" className="hover:text-gray-300">Cajero</a>
+          <a href="/depositar" className="hover:text-gray-300">Cajero</a>
         </div>
 
 
