@@ -6,7 +6,7 @@ const Dropdown = () => {
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
-  const countriesReal = ['Australia', 'Canadá', 'Sudáfrica'];
+  const countriesReal = ['Pound Sterling', 'Bitcoin', 'Etherium', 'Litecoin', 'Tether ERC20', 'Tether TRC20'];
   const countriesDemo = ['Colombia', 'España', 'Chile'];
 
   return (
@@ -48,30 +48,157 @@ const Dropdown = () => {
           {/* Contenido del Dropdown */}
           <div className="py-1">
             {activeTab === 'real' && (
-              <div className="px-4 py-2">
-                {countriesReal.map((country, index) => (
-                  <div key={`real-${index}`} className="flex justify-between items-center text-white py-1">
-                    <div className="flex items-center">
-                      <img src="/src/images/libra.png" alt="Libra" className="h-5 w-5 mr-2" />
-                      <span>{country}</span>
+              <div className="">
+                <div className="flex flex-row justify-between p-1">
+                  <div className="flex flex-row items-center gap-2">
+                    <img   src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1200px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" alt="Pound" className='h-5 w-5 rounded-full'/>
+                    <div className="">
+                      <h1 className='text-white'>Pound Sterling</h1>
+                      <p className='text-zinc-400 text-xs'>CR4168557</p>
                     </div>
-                    <span>0.11111111</span>
                   </div>
-                ))}
+                  <div className=" text-white">
+                    <h1>0.00 GBP</h1>
+                  </div>
+                </div>
+                <div className="flex flex-row justify-between p-1">
+                  <div className="flex flex-row items-center gap-2">
+                    <img   src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png" alt="Bitcoin" className='h-5 w-5 rounded-full'/>
+                    <div className="">
+                      <h1 className='text-white'>Bitcoin</h1>
+                      <p className='text-zinc-400 text-xs'>CR4194244</p>
+                    </div>
+                  </div>
+                  <div className=" text-white">
+                    <h1>0.00000000 BTC</h1>
+                  </div>
+                </div>
+                <div className="flex flex-row justify-between p-1">
+                  <div className="flex flex-row items-center gap-2">
+                    <img   src="https://www.creativefabrica.com/wp-content/uploads/2021/06/14/Cryptocurrency-Ethereum-Logo-Graphics-13394054-1.jpg" alt="Ethereum" className='h-5 w-5 rounded-full'/>
+                    <div className="">
+                      <h1 className='text-white'>Ethereum</h1>
+                      <p className='text-zinc-400 text-xs'>CR6377404</p>
+                    </div>
+                  </div>
+                  <div className=" text-white">
+                    <h1>0.00000000 ETH</h1>
+                  </div>
+                </div>
+                <div className="flex flex-row justify-between p-1">
+                  <div className="flex flex-row items-center gap-2">
+                    <img   src="https://logowik.com/content/uploads/images/t_litecoin-ltc-icon2338.logowik.com.webp" alt="Litecoin" className='h-5 w-5 rounded-full'/>
+                    <div className="">
+                      <h1 className='text-white'>Litecoin</h1>
+                      <p className='text-zinc-400 text-xs'>CR6377401</p>
+                    </div>
+                  </div>
+                  <div className=" text-white">
+                    <h1>0.0000000 LTC</h1>
+                  </div>
+                </div>
+                <div className="flex flex-row justify-between p-1">
+                  <div className="flex flex-row items-center gap-2">
+                    <img   src="https://w7.pngwing.com/pngs/113/18/png-transparent-tether-hd-logo-thumbnail.png" alt="Pound" className='h-5 w-5 rounded-full'/>
+                    <div className="">
+                      <h1 className='text-white'>Tether ERC20</h1>
+                      <p className='text-zinc-400 text-xs'>CR458711</p>
+                    </div>
+                  </div>
+                  <div className=" text-white">
+                    <h1>0.00 eUSDT</h1>
+                  </div>
+                </div>
+                <div className="flex flex-row justify-between p-1">
+                  <div className="flex flex-row items-center gap-2">
+                    <img   src="https://w7.pngwing.com/pngs/113/18/png-transparent-tether-hd-logo-thumbnail.png" alt="Pound" className='h-5 w-5 rounded-full'/>
+                    <div className="">
+                      <h1 className='text-white'>Tether TRC20</h1>
+                      <p className='text-zinc-400 text-xs'>CR6377398</p>
+                    </div>
+                  </div>
+                  <div className=" text-white">
+                    <h1>0.00 tUSDT</h1>
+                  </div>
+                </div>
               </div>
+              
             )}
             {activeTab === 'demo' && (
-              <div className="px-4 py-2">
-                {countriesDemo.map((country, index) => (
-                  <div key={`demo-${index}`} className="flex justify-between items-center text-white py-1">
-                    <div className="flex items-center">
-                      <img src="/src/images/libra.png" alt="Libra" className="h-5 w-5 mr-2" />
-                      <span>{country}</span>
-                    </div>
-                    <span>0.11111111</span>
+              <div className="">
+              <div className="flex flex-row justify-between p-1">
+                <div className="flex flex-row items-center gap-2">
+                  <img   src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1200px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" alt="Pound" className='h-5 w-5 rounded-full'/>
+                  <div className="">
+                    <h1 className='text-white'>Pound Sterling</h1>
+                    <p className='text-zinc-400 text-xs'>CR4168557</p>
                   </div>
-                ))}
+                </div>
+                <div className=" text-white">
+                  <h1>0.00 GBP</h1>
+                </div>
               </div>
+              <div className="flex flex-row justify-between p-1">
+                <div className="flex flex-row items-center gap-2">
+                  <img   src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png" alt="Bitcoin" className='h-5 w-5 rounded-full'/>
+                  <div className="">
+                    <h1 className='text-white'>Bitcoin</h1>
+                    <p className='text-zinc-400 text-xs'>CR4194244</p>
+                  </div>
+                </div>
+                <div className=" text-white">
+                  <h1>0.00000000 BTC</h1>
+                </div>
+              </div>
+              <div className="flex flex-row justify-between p-1">
+                <div className="flex flex-row items-center gap-2">
+                  <img   src="https://www.creativefabrica.com/wp-content/uploads/2021/06/14/Cryptocurrency-Ethereum-Logo-Graphics-13394054-1.jpg" alt="Ethereum" className='h-5 w-5 rounded-full'/>
+                  <div className="">
+                    <h1 className='text-white'>Ethereum</h1>
+                    <p className='text-zinc-400 text-xs'>CR6377404</p>
+                  </div>
+                </div>
+                <div className=" text-white">
+                  <h1>0.00000000 ETH</h1>
+                </div>
+              </div>
+              <div className="flex flex-row justify-between p-1">
+                <div className="flex flex-row items-center gap-2">
+                  <img   src="https://logowik.com/content/uploads/images/t_litecoin-ltc-icon2338.logowik.com.webp" alt="Litecoin" className='h-5 w-5 rounded-full'/>
+                  <div className="">
+                    <h1 className='text-white'>Litecoin</h1>
+                    <p className='text-zinc-400 text-xs'>CR6377401</p>
+                  </div>
+                </div>
+                <div className=" text-white">
+                  <h1>0.0000000 LTC</h1>
+                </div>
+              </div>
+              <div className="flex flex-row justify-between p-1">
+                <div className="flex flex-row items-center gap-2">
+                  <img   src="https://w7.pngwing.com/pngs/113/18/png-transparent-tether-hd-logo-thumbnail.png" alt="Pound" className='h-5 w-5 rounded-full'/>
+                  <div className="">
+                    <h1 className='text-white'>Tether ERC20</h1>
+                    <p className='text-zinc-400 text-xs'>CR458711</p>
+                  </div>
+                </div>
+                <div className=" text-white">
+                  <h1>0.00 eUSDT</h1>
+                </div>
+              </div>
+              <div className="flex flex-row justify-between p-1">
+                <div className="flex flex-row items-center gap-2">
+                  <img   src="https://w7.pngwing.com/pngs/113/18/png-transparent-tether-hd-logo-thumbnail.png" alt="Pound" className='h-5 w-5 rounded-full'/>
+                  <div className="">
+                    <h1 className='text-white'>Tether TRC20</h1>
+                    <p className='text-zinc-400 text-xs'>CR6377398</p>
+                  </div>
+                </div>
+                <div className=" text-white">
+                  <h1>0.00 tUSDT</h1>
+                </div>
+              </div>
+            </div>
             )}
           </div>
           <div class="flex justify-between px-2 py-2">

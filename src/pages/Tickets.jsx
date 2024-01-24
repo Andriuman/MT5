@@ -30,6 +30,66 @@ export function Tickets() {
                         </div>
                     </div>
                     <div className="">
+                    <AccordeonTickets
+                            fecha="2024-12-27 14:40:25 GMT"
+                            accion="Ticket"
+                            asunto="Urgente revision, proceso de retiro"
+                            correo="ancasafutrader21@gmail.com"
+                            estado="No answer"
+                            contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
+                            varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
+                            no he podido disponer de ellos como deberia, esto me ha traido varios problemas
+                            ya que no he podido cumplir con mis obligaciones, las mismas que adquiri pensando en el cumplimiento
+                            de los contratos y los tiempos de retiro.
+                            Hemos enviado varios tickets y espero se me de pronta respuesta y prioridad en vista de que tengo
+                            varios retiros en la fila y varios tickets solicitando respuesta y atención a estos procesos para
+                            que se puedan realizar a la menos brevedad."
+                        />
+                    <AccordeonTickets
+                            fecha="2024-01-13 20:12:45 GMT"
+                            accion="Ticket"
+                            asunto="Urgente revision, proceso de retiro"
+                            correo="ancasafutrader21@gmail.com"
+                            estado="No answer"
+                            contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
+                            varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
+                            no he podido disponer de ellos como deberia, esto me ha traido varios problemas
+                            ya que no he podido cumplir con mis obligaciones, las mismas que adquiri pensando en el cumplimiento
+                            de los contratos y los tiempos de retiro.
+                            Hemos enviado varios tickets y espero se me de pronta respuesta y prioridad en vista de que tengo
+                            varios retiros en la fila y varios tickets solicitando respuesta y atención a estos procesos para
+                            que se puedan realizar a la menos brevedad."
+                        />
+                    <AccordeonTickets
+                            fecha="2024-01-07 18:23:11 GMT"
+                            accion="Ticket"
+                            asunto="Urgente revision, proceso de retiro"
+                            correo="ancasafutrader21@gmail.com"
+                            estado="No answer"
+                            contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
+                            varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
+                            no he podido disponer de ellos como deberia, esto me ha traido varios problemas
+                            ya que no he podido cumplir con mis obligaciones, las mismas que adquiri pensando en el cumplimiento
+                            de los contratos y los tiempos de retiro.
+                            Hemos enviado varios tickets y espero se me de pronta respuesta y prioridad en vista de que tengo
+                            varios retiros en la fila y varios tickets solicitando respuesta y atención a estos procesos para
+                            que se puedan realizar a la menos brevedad."
+                        />
+                    <AccordeonTickets
+                            fecha="2024-01-02 12:10:34 GMT"
+                            accion="Ticket"
+                            asunto="Urgente revision, proceso de retiro"
+                            correo="ancasafutrader21@gmail.com"
+                            estado="No answer"
+                            contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
+                            varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
+                            no he podido disponer de ellos como deberia, esto me ha traido varios problemas
+                            ya que no he podido cumplir con mis obligaciones, las mismas que adquiri pensando en el cumplimiento
+                            de los contratos y los tiempos de retiro.
+                            Hemos enviado varios tickets y espero se me de pronta respuesta y prioridad en vista de que tengo
+                            varios retiros en la fila y varios tickets solicitando respuesta y atención a estos procesos para
+                            que se puedan realizar a la menos brevedad."
+                        />
                         <AccordeonTickets
                             fecha="2023-12-27 14:40:25 GMT"
                             accion="Ticket"
