@@ -71,30 +71,30 @@ export function Fiat() {
               </div>
 
               {/* Div 4: Slider de Imágenes */}
-              <div className="mb-4">
+              <div className="mb-4 w-10">
                 <Slider {...sliderSettings}>
-                  <div className="flex flex-row">
                     <img
                       src={visa}
                       alt="Método de Pago 1"
-                      className=""
+                      className="w-10 h-10"
                     />
                     <img
                       src={american}
                       alt="Método de Pago 2"
-                      className=""
+                      className="w-10 h-10"
                     />
-                  </div>
-                  <img
-                    src={paypal}
-                    alt="Método de Pago 3"
-                    className=""
-                  />
-                  <img
-                    src={stripe}
-                    alt="Método de Pago 4"
-                    className=""
-                  />
+
+                    <img
+                      src={paypal}
+                      alt="Método de Pago 3"
+                      className="w-10 h-10"
+                    />
+                    <img
+                      src={stripe}
+                      alt="Método de Pago 4"
+                      className="w-10 h-10"
+                    />
+                  
                   {/* Agregar unas 4 imágenes más */}
                 </Slider>
               </div>
