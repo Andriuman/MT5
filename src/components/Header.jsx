@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faBell, faMoneyBillWave, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Acordeon from './Acordeon';
 import Dropdown from './Dropdown';
-
-
-
+import { Link } from "react-router-dom";
+import casa from "../assets/casa.png"
+import informes from "../assets/informes.png"
 
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
             <option>
               <div className="flex items-center">
                 <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-                
+
               </div>
             </option>
             <option></option>
@@ -30,7 +30,7 @@ const Header = () => {
           </select>
         </div>
 
-        
+
 
 
 
@@ -38,10 +38,10 @@ const Header = () => {
 
 
         {/* Enlaces de navegación */}
-        <div className="hidden md:flex items-left space-x-4">
-          <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
+        <div className="hidden md:flex items-center space-x-4">
+          <img className="w-4 h-4 " src={casa} alt="" />
           <a href="/" className="hover:text-gray-300">Trader's Hub</a>
-          <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
+          <img className="w-4 h-4 " src={informes} alt="" />
           <a href="/posiciones" className="hover:text-gray-300">Informes</a>
           <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
           <a href="/depositar" className="hover:text-gray-300">Cajero</a>
@@ -50,19 +50,22 @@ const Header = () => {
 
         <div className="flex items-center">
           <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-          <FontAwesomeIcon icon={faUser} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-          
+          <Link to="/datosPersonales">
+            <FontAwesomeIcon icon={faUser} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
+          </Link>
 
 
 
-          
+
+
+
 
           <div className="flex items-center text-magenta  rounded px-2 py-1">
             <FontAwesomeIcon icon={faMoneyBillWave} className="h-3 w-3 text-white mr-1" />
-            <Dropdown/>
+            <Dropdown />
           </div>
-          
-          
+
+
 
 
           <button className="ml-3 bg-custom-red hover:bg-blue-700 text-white py-1 px-3 rounded">

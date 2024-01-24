@@ -3,7 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faBell, faMoneyBillWave } from '@fortawesome/free-solid-svg-icons';
 import { FaWhatsapp } from 'react-icons/fa';
 import Iconos from './Acordeon';
-
+import chat from "../assets/chat.png"
+import shield from "../assets/sield.png"
+import speed from "../assets/speed.png"
+import luna from "../assets/luna.png"
+import question from "../assets/question.png"
+import square from "../assets/sqare.png"
 
 export function Footer() {
   // Estado para almacenar la fecha y hora actual
@@ -47,14 +52,14 @@ export function Footer() {
           </div>
           
           <FaWhatsapp className="text-green-500 h-9 w-9 p-2" />
-          <FontAwesomeIcon icon={faUser} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-          
-          <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-          <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-          <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-          <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-          <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-          <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
+          <img className="w-4 h-4 mr-3 hover:text-gray-300 cursor-pointer " src={chat} alt="" />
+          <img className="w-4 h-4 mr-3 hover:text-gray-300 cursor-pointer " src={shield} alt="" />
+          <img className="w-4 h-4 mr-3 hover:text-gray-300 cursor-pointer " src={speed} alt="" />
+          <img className="w-4 h-4 mr-3 hover:text-gray-300 cursor-pointer " src={luna} alt="" />
+          <img className="w-4 h-4 mr-3 hover:text-gray-300 cursor-pointer " src={question} alt="" />
+          <div className="flex flex-row mr-3 gap-1 items-center "><img className='w-4 h-3' src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.svg.png" alt="" />ES</div>
+          <img className="w-4 h-4 mr-3 hover:text-gray-300 cursor-pointer " src={square} alt="" />
+
           
           {/* Agregar más enlaces según sea necesario */}
         </div>

@@ -1,8 +1,64 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function LoginPage() {
   return (
-    <div className='text-red-500 text-5xl pt-32'>LoginPage</div>
+    <div className="containerbg w-screen bg-white flex justify-around">
+      <div className="w-full flex flex-col items-center h-100">
+        <img src="https://deriv.com/static/og_deriv-a4f062ad58a73113fccfaf1b948a8a19.jpg" className='h-40 w-60' alt="" />
+        <div className="w-80 flex flex-col gap-3 justify-center items-start text-black">
+          <h1 className='text-xl font-bold'>Bienvenido/a!</h1>
+          <p>Inicie sesión para continuar.</p>
+          <div className="w-full">
+            <p className='text-xs'>Correo electronico</p>
+            <input className='w-full p-2 border border-zinc-800 rounded' type="text" placeholder='ejemplo@email.com'/>
+          </div>
+          <div className="w-full">
+            <p className='text-xs'>Contraseña</p>
+            <input className='w-full p-2 border border-zinc-800 rounded' type="password" placeholder='Contraseña'/>
+          </div>
+          <p className='text-red-500'>¿olvidó la contraseña?</p>
+          <Link to="/home" className='flex justify-center items-center w-full bg-red-500 text-white font-bold p-1 rounded'>Inicie sesión</Link>
+          <div className="w-full flex justify-center items-center text-xs "><p>O inicia sesión con</p></div>
+          <button className='gap-2 flex flex-row justify-center items-center w-full bg-white border text-black font-bold p-1 rounded'><img className='h-5 w-5 rounded-full' src="data:image/png;base64,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" alt="" />Google</button>
+          <button className='gap-2 flex flex-row justify-center items-center w-full bg-blue-500 text-white font-bold p-1 rounded'><img className='h-5 w-5 rounded-full' src="https://cdn.icon-icons.com/icons2/2415/PNG/512/facebook_original_logo_icon_146526.png" alt="" />Facebook</button>
+        </div>
+      </div>
+      <style>
+        {`
+          .containerbg {
+            height:90vh;
+            width:100vw;
+            background-color: white;
+
+          .containerText{
+            width: 90%
+          }
+        `}
+      </style>
+      <div className="fixed top-0 w-full bg-white h-20 text-zinc-500 flex flex-row justify-around items-center">
+        <div className="">
+        <Link to="/"><img className='w-40' src="https://deriv.com/static/og_deriv-a4f062ad58a73113fccfaf1b948a8a19.jpg" alt="Logo" /></Link>
+          
+        </div>
+        <div className="">
+          <ul className='flex flex-row justify-between gap-10'>
+            <li><a href="">Opere</a></li>
+            <li><a href="">Mercados</a></li>
+            <li><a href="">Sobre nosotros</a></li>
+            <li><a href="">Recursos</a></li>
+          </ul>
+        </div>
+        <div className=" flex flex-row gap-5 items-center">
+          <Link to="/home" className='p-3 border border-black rounded font-bold text-black '>Iniciar sesión</Link>
+          <button className='p-3 border rounded font-bold text-white bg-red-500 '>Abrir cuenta demo</button>
+          <div className="flex flex-row"><img className='w-5' src="https://icones.pro/wp-content/uploads/2021/06/icone-du-monde-noir.png" alt="" />ES</div>
+        </div>
+      </div>
+    </div>
+
+
   )
 }
 
+export default LoginPage;

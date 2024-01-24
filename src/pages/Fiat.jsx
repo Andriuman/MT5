@@ -52,8 +52,8 @@ export function Fiat() {
           {/* Tarjeta de Información */}
           <div className="mx-auto max-w-4xl p-4 bg-black rounded-lg shadow-lg flex">
             {/* Div 1: Imagen del Banco */}
-            <div className="w-1/3 flex justify-center">
-              <img src={banxa} alt="Logo del Banco" className="w-2/3 h-auto" />
+            <div className="w-1/3 flex justify-center items-center">
+              <img src={banxa} alt="Logo del Banco" className="w-3/3 h-1/2" />
             </div>
 
             {/* Div 2 y 3: Título y Texto */}
@@ -73,25 +73,27 @@ export function Fiat() {
               {/* Div 4: Slider de Imágenes */}
               <div className="mb-4">
                 <Slider {...sliderSettings}>
-                  <img
-                    src={visa}
-                    alt="Método de Pago 1"
-                    className="w-1/3 h-auto"
-                  />
-                  <img
-                    src={american}
-                    alt="Método de Pago 2"
-                    className="w-1/3 h-auto"
-                  />
+                  <div className="flex flex-row">
+                    <img
+                      src={visa}
+                      alt="Método de Pago 1"
+                      className=""
+                    />
+                    <img
+                      src={american}
+                      alt="Método de Pago 2"
+                      className=""
+                    />
+                  </div>
                   <img
                     src={paypal}
                     alt="Método de Pago 3"
-                    className="w-1/3 h-auto"
+                    className=""
                   />
                   <img
                     src={stripe}
                     alt="Método de Pago 4"
-                    className="w-1/3 h-auto"
+                    className=""
                   />
                   {/* Agregar unas 4 imágenes más */}
                 </Slider>

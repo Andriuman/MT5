@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function Home() {
     return (
@@ -9,7 +10,7 @@ export function Home() {
                     para hacer trading</h1>
                 <h3 className='containerText text-black text-2xl w-1/2'>Obtenga la más amplia gama de mercados, operaciones y plataformas</h3>
                 <h2 className='containerText text-black text-3xl font-bold'>Materias primas</h2>
-                <button class="bg-red-500 text-white px-4 py-2 rounded-full h-20 text-xl font-semibold">Crear una cuenta demo gratis</button>
+                <button class="bg-red-500 text-white px-4 py-2 rounded-full h-20 text-xl font-semibold flex justify-center items-center">Crear una cuenta demo gratis</button>
             </div>
             <div className="w-[calc(50%+50px)] flex item-end justify-end h-100"><img src="src\images\toppng.com-ensando-especialmente-en-las-personas-con-movilidad-imagenes-de-personas-1057x1162.png" className='h-full ' alt="" /></div>
             <style>
@@ -24,7 +25,26 @@ export function Home() {
           }
         `}
             </style>
+            <div className="fixed top-0 w-full bg-white h-20 text-zinc-500 flex flex-row justify-around items-center">
+                <div className="">
+                    <img className='w-40' src="https://deriv.com/static/og_deriv-a4f062ad58a73113fccfaf1b948a8a19.jpg" alt="Logo" />
+                </div>
+                <div className="">
+                    <ul className='flex flex-row justify-between gap-10'>
+                        <li><a href="">Opere</a></li>
+                        <li><a href="">Mercados</a></li>
+                        <li><a href="">Sobre nosotros</a></li>
+                        <li><a href="">Recursos</a></li>
+                    </ul>
+                </div>
+                <div className=" flex flex-row gap-5 items-center">
+                    <Link to="/login" className='p-3 border border-black rounded font-bold text-black '>Iniciar sesión</Link>
+                    <button className='p-3 border rounded font-bold text-white bg-red-500 '>Abrir cuenta demo</button>
+                    <div className="flex flex-row"><img className='w-5' src="https://icones.pro/wp-content/uploads/2021/06/icone-du-monde-noir.png" alt="" />ES</div>
+                </div>
+            </div>
         </div>
+        
 
     )
 }

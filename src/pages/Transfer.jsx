@@ -22,7 +22,7 @@ export function Transfer() {
                 className="mx-auto mb-4"
                 src={error}
                 alt="Error al retirar"
-                width="400"
+                width="200"
               />
               <div className="text-2xl font-semibold mb-4">
                 No tiene fondos en su cuenta eUSDT

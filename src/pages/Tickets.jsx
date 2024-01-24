@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Acordeon from '../components/Acordeon';
-import { Link } from 'react-router-dom';
 import AccordeonTickets from '../components/AcordeonTickets';
 
+
 export function Tickets() {
+
     return (
         <div className='flex flex-col w-full'>
             <div className="w-full flex text-2xl font-bold justify-center">Configuración</div>
@@ -29,9 +30,13 @@ export function Tickets() {
                             <div className='mr-20'>Estado</div>
                         </div>
                     </div>
-                    <div className="">
-                    <AccordeonTickets
-                            fecha="2024-12-27 14:40:25 GMT"
+                    <div className="" >
+                        <div className="rounded mb-1" id='ticketCotainer'>
+
+                        </div>
+
+                        <AccordeonTickets
+                            fecha="2024-12-22 14:40:25 GMT"
                             accion="Ticket"
                             asunto="Urgente revision, proceso de retiro"
                             correo="ancasafutrader21@gmail.com"
@@ -45,7 +50,7 @@ export function Tickets() {
                             varios retiros en la fila y varios tickets solicitando respuesta y atención a estos procesos para
                             que se puedan realizar a la menos brevedad."
                         />
-                    <AccordeonTickets
+                        <AccordeonTickets
                             fecha="2024-01-13 20:12:45 GMT"
                             accion="Ticket"
                             asunto="Urgente revision, proceso de retiro"
@@ -60,7 +65,7 @@ export function Tickets() {
                             varios retiros en la fila y varios tickets solicitando respuesta y atención a estos procesos para
                             que se puedan realizar a la menos brevedad."
                         />
-                    <AccordeonTickets
+                        <AccordeonTickets
                             fecha="2024-01-07 18:23:11 GMT"
                             accion="Ticket"
                             asunto="Urgente revision, proceso de retiro"
@@ -75,7 +80,7 @@ export function Tickets() {
                             varios retiros en la fila y varios tickets solicitando respuesta y atención a estos procesos para
                             que se puedan realizar a la menos brevedad."
                         />
-                    <AccordeonTickets
+                        <AccordeonTickets
                             fecha="2024-01-02 12:10:34 GMT"
                             accion="Ticket"
                             asunto="Urgente revision, proceso de retiro"
@@ -110,7 +115,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Urgente revision, proceso de retiro"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="Resolved"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas

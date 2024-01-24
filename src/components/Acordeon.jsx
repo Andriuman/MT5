@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faChartBar, faCheckCircle, faShieldAlt, faChevronDown, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 const Accordion = () => {
   const [isOpenPerfil, setIsOpenPerfil] = useState(false);
@@ -49,12 +50,12 @@ const Accordion = () => {
           leaveTo="transform scale-95 opacity-0"
         >
           <div className="px-4 pt-4 pb-2 space-y-2">
-            <button
+            <Link to="/datosPersonales"
               className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'perfil' && selectedButton.button === 'datosPersonales' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717]'}`}
               onClick={() => handleButtonClick('perfil', 'datosPersonales')}
             >
               Datos personales
-            </button>
+            </Link>
 
             <button
               className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'perfil' && selectedButton.button === 'idiomas' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717]'}`}
@@ -89,13 +90,13 @@ const Accordion = () => {
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <div className="px-4 pt-4 pb-2 space-y-2">
-            <button
+          <div className=" flex flex-col px-4 pt-4 pb-2 space-y-2">
+            <Link to="/configuracion"
               className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'evaluaciones' && selectedButton.button === 'evaluacionTrading' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
               onClick={() => handleButtonClick('evaluaciones', 'evaluacionTrading')}
             >
               Evaluación de trading
-            </button>
+            </Link>
 
             <button
               className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'evaluaciones' && selectedButton.button === 'evaluacionFinanciera' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
@@ -130,20 +131,20 @@ const Accordion = () => {
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <div className="px-4 pt-4 pb-2 space-y-2">
-            <button
+          <div className=" flex flex-col px-4 pt-4 pb-2 space-y-2">
+            <Link to="/identidad"
               className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'verificacion' && selectedButton.button === 'pruebaIdentidad' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
               onClick={() => handleButtonClick('verificacion', 'pruebaIdentidad')}
             >
               Prueba de identidad
-            </button>
+            </Link>
 
-            <button
+            <Link to="/domicilio"
               className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'verificacion' && selectedButton.button === 'pruebaDomicilio' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
               onClick={() => handleButtonClick('verificacion', 'pruebaDomicilio')}
             >
               Prueba de domicilio
-            </button>
+            </Link>
 
 
 
@@ -218,12 +219,12 @@ const Accordion = () => {
               Historial de accesos
             </button>
 
-            <button
-              className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'seguridad' && selectedButton.button === 'Token Api' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
+            <Link to="/tickets"
+              className={` flex w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'seguridad' && selectedButton.button === 'Token Api' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}
               onClick={() => handleButtonClick('seguridad', 'Token Api')}
             >
-              Token Api
-            </button>
+              Support Ticket
+            </Link>
 
             <button
               className={`w-full text-white text-left py-2 px-4 rounded-lg ${selectedButton.section === 'seguridad' && selectedButton.button === 'Aplicaciones conectadas' ? 'bg-black border-l-4 border-red-500' : 'bg-[#151717] '}`}

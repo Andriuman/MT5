@@ -31,8 +31,8 @@ function App() {
         <Header />
         <div className="flex-grow">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/home/" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<HomePage />} />
             <Route path="/login/" element={<LoginPage />} />
             <Route path="/configuracion/" element={<Settings />} />
             <Route path="/identidad/" element={<Settings2/>} />

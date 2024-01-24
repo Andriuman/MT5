@@ -19,10 +19,10 @@ export function Withdraw() {
           <div className="scroll-container">    
             <div className="text-center">
               <img
-                className="mx-auto mb-4"
+                className="mx-auto mb-4 "
                 src={error}
                 alt="Error al retirar"
-                width="400"
+                width="200"
               />
               <div className="text-2xl font-semibold mb-4">
                 No tiene fondos en su cuenta eUSDT
