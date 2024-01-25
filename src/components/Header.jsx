@@ -6,6 +6,10 @@ import Dropdown from './Dropdown';
 import { Link } from "react-router-dom";
 import casa from "../assets/casa.png"
 import informes from "../assets/informes.png"
+import Cajero from "../assets/atm.png"
+import logo from "../assets/mtg.png"
+import tether from "../assets/tether.svg"
+
 
 
 const Header = () => {
@@ -14,7 +18,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-2 px-4">
         {/* Logo y selección de mercado */}
         <div className="flex items-center">
-          <img src="src/images/mtg.png" alt="Logo" className="h-11 mr-3" />
+          <img src={logo} alt="Logo" className="h-11 mr-3" />
           <span className="ml-3 text-xl text-white">Deriv MT5</span>
           <select className="bg-zinc-950 text-white">
             <option>
@@ -43,7 +47,7 @@ const Header = () => {
           <a href="/" className="hover:text-gray-300">Trader's Hub</a>
           <img className="w-4 h-4 " src={informes} alt="" />
           <a href="/posiciones" className="hover:text-gray-300">Informes</a>
-          <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
+          <img className="w-4 h-4 " src={Cajero} alt="" />
           <a href="/depositar" className="hover:text-gray-300">Cajero</a>
         </div>
 
@@ -61,7 +65,7 @@ const Header = () => {
 
 
           <div className="flex items-center text-magenta  rounded px-2 py-1">
-          <img src="src/images/tether.svg" alt="Descripción" className="h-8 w-8 mr-1" />
+          <img src={tether} alt="Descripción" className="h-8 w-8 mr-1" />
             <Dropdown />
           </div>
 
