@@ -243,7 +243,6 @@ export function Informes3() {
                     </div>
                 </div>
             </div>
-            <div className="fixed top-20 right-20 text-xl"><a href="/">X</a></div>
         </div>
     );
 }

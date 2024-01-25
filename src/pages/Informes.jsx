@@ -18,7 +18,6 @@ export function Informes() {
                     <h1 className='text-zinc-600 pr-10 font-bold'>Aun no tienes posiciones abiertas</h1>
                 </div>
             </div>
-            <div className="fixed top-20 right-20 text-xl"><a href="/">X</a></div>
         </div>
     );
 }
