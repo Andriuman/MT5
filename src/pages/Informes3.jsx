@@ -15,7 +15,7 @@ export function Informes3() {
                 <div className="w-1/4 bg-zinc-950 text-white p-4">
                     <Menu activeOption={"HOLA"} />
                 </div>
-                <div className="pt-10 flex w-3/4 flex-col gap-5 justify-center items-center">
+                <div className="pt-10 flex 2-auto flex-col gap-5 justify-center items-center">
                     <div className="flex flex-row items-end w-full justify-end gap-3">
                         <button className='flex flex-row items-center gap-3 pl-10 pr-10 pt-1 pb-1 border border-white rounded'>
                             <img className='w-4 h-4' src={Calendario} alt="" />
@@ -30,7 +30,7 @@ export function Informes3() {
                             <p>Todas las transacciones</p>
                         </button>
                     </div>
-                    <div className="flex flex-col bg-zinc-95 mb-40">
+                    <div className="flex flex-col bg-zinc-95 mb-40 w-full">
                         <div className="flex flex-row h-20 p-4 font-bold">
                             <p className='w-40 flex justify-center items-center'>Tipo</p>
                             <p className='w-40 flex justify-center items-center'>ID de ref</p>
