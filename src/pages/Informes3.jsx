@@ -3,6 +3,8 @@ import info from '../assets/info.png'
 import ico1 from '../assets/ico1.png'
 import ico2 from '../assets/ico2.png'
 import ico3 from '../assets/ico3.png'
+import Ra from '../assets/Ra.png'
+import Calendario from '../assets/Calendario.png'
 import Menu from "../components/menuInformes";
 
 export function Informes3() {
@@ -14,6 +16,20 @@ export function Informes3() {
                     <Menu activeOption={"HOLA"} />
                 </div>
                 <div className="pt-10 flex w-3/4 flex-col gap-5 justify-center items-center">
+                    <div className="flex flex-row items-end w-full justify-end gap-3">
+                        <button className='flex flex-row items-center gap-3 pl-10 pr-10 pt-1 pb-1 border border-white rounded'>
+                            <img className='w-4 h-4' src={Calendario} alt="" />
+                            <p>Desde fecha</p>
+                        </button>
+                        <button className='flex flex-row items-center gap-3 pl-10 pr-10 pt-1 pb-1 border border-white rounded'>
+                            <img className='w-4 h-4' src={Calendario} alt="" />
+                            <p>Hoy</p>
+                        </button>
+                        <button className='flex flex-row items-center gap-3 pl-5 pr-5 pt-1 pb-1 border border-white rounded mr-10'>
+                            <img className='w-4 h-4' src={Ra} alt="" />
+                            <p>Todas las transacciones</p>
+                        </button>
+                    </div>
                     <div className="flex flex-col bg-zinc-95 mb-40">
                         <div className="flex flex-row h-20 p-4 font-bold">
                             <p className='w-40 flex justify-center items-center'>Tipo</p>
