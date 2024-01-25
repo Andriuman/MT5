@@ -28,9 +28,6 @@ const AccordeonTickets = ({ fecha, accion, asunto, correo, estado, contenido }) 
         <div className='w-40 text-xs'>
           <div>{estado}</div>
         </div>
-        <div className={`transform ${isOpen ? 'rotate-0' : 'rotate-180'}`}>
-          &#9660;
-        </div>
       </div>
       {isOpen && (
         <div className="p-4 bg-zinc-900 text-white p-5">
