@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Imagen1 from '../assets/toppng.com-ensando-especialmente-en-las-personas-con-movilidad-imagenes-de-personas-1057x1162.png'
+import Imagen3 from '../assets/toppng.com-business-man-1301x1718.png'
 
 export function Home() {
     return (
@@ -19,27 +21,27 @@ export function Home() {
                     background-size: contain;
                     background-repeat: no-repeat;
 
-                    animation: cambioImagen 35s infinite linear;
+                    animation: cambioImagen 30s infinite linear;
                 }
 
                 @keyframes cambioImagen {
                     0%, 100%{
-                      background-image: url('src/assets/toppng.com-ensando-especialmente-en-las-personas-con-movilidad-imagenes-de-personas-1057x1162.png')
+                        background-image: url(${Imagen1})
                     }
                     15%{
-                        background-image: url('src/assets/toppng.com-ensando-especialmente-en-las-personas-con-movilidad-imagenes-de-personas-1057x1162.png')
+                        background-image: url(${Imagen1})
                       }
                     40% {
-                      background-image: url('src/assets/—Pngtree—man in shirt smiles and_13146348.png');
+                        background-image: url(${Imagen3});
                     }
                     55% {
-                        background-image: url('src/assets/—Pngtree—man in shirt smiles and_13146348.png');
+                        background-image: url(${Imagen3});
                       }
                     60% {
-                        background-image: url('src/assets/toppng.com-business-man-1301x1718.png');
+                        background-image: url(${Imagen3});
                       }
                     75% {
-                        background-image: url('src/assets/toppng.com-business-man-1301x1718.png');
+                        background-image: url(${Imagen1});
                     }
                     
                   }
