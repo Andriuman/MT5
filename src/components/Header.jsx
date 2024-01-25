@@ -61,7 +61,7 @@ const Header = () => {
 
 
           <div className="flex items-center text-magenta  rounded px-2 py-1">
-            <FontAwesomeIcon icon={faMoneyBillWave} className="h-3 w-3 text-white mr-1" />
+          <img src="src/images/tether.svg" alt="Descripción" className="h-8 w-8 mr-1" />
             <Dropdown />
           </div>
 

@@ -27,7 +27,7 @@ const Dropdown = () => {
 
       {/* Dropdown */}
       {isOpen && (
-        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-zinc-900 ring-1 ring-black ring-opacity-5">
+        <div className="origin-top-right absolute right-0 mt-2 w-80 rounded-md shadow-lg bg-zinc-900 ring-1 ring-black ring-opacity-5">
           {/* Tabs para seleccionar la columna */}
           <div className="px-0 py-2">
             <div className="flex justify-between">
