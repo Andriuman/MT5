@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="h-11 mr-3" />
           <span className="ml-3 text-xl text-white">Deriv MT5</span>
-          <select className="bg-zinc-950 text-white ml-2 w-20">
+          <select className="bg-zinc-950 text-white ml-2">
             <option>10122532121962</option>
           </select>
         </div>
