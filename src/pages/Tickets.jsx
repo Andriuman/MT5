@@ -40,7 +40,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Urgente revision, proceso de retiro"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="No Answer"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -55,7 +55,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Urgente revision, proceso de retiro"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="No Answer"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -70,7 +70,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Urgente revision, proceso de retiro"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="No Answer"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -85,7 +85,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Urgente revision, proceso de retiro"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="No Answer"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -100,7 +100,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Urgente revision, proceso de retiro"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="Resolved"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -130,7 +130,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Proceso de verificación para retiro"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="Resolved"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -145,7 +145,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Retiros pendientes y atrasados"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="Resolved"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -160,7 +160,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Retiros pendientes y atrasados"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="Resolved"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -175,7 +175,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Solicitud de retiro pendiente"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="Resolved"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -190,7 +190,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Solicitud de retiro pendiente"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="Resolved"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -205,7 +205,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Solicitud de retiro pendiente"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="Resolved"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -220,7 +220,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Solicitud de retiro pendiente"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="Resolved"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas
@@ -235,7 +235,7 @@ export function Tickets() {
                             accion="Ticket"
                             asunto="Solicitud de retiro pendiente"
                             correo="ancasafutrader21@gmail.com"
-                            estado="No answer"
+                            estado="Resolved"
                             contenido="Buenos dias, solicito la verificación y aprobacion de mis retiros que tiene
                             varias semanas de retraso y estas demoras ya me tienen afectado ya que tengo estos dineros comprometidos y 
                             no he podido disponer de ellos como deberia, esto me ha traido varios problemas

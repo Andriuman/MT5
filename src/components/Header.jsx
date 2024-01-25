@@ -20,27 +20,12 @@ const Header = () => {
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="h-11 mr-3" />
           <span className="ml-3 text-xl text-white">Deriv MT5</span>
-          <select className="bg-zinc-950 text-white">
-            <option>
-              <div className="flex items-center">
-                <FontAwesomeIcon icon={faBell} className="h-4 w-4 mr-3 hover:text-gray-300 cursor-pointer" />
-
-              </div>
-            </option>
-            <option></option>
-            <option>Opcion2</option>
-            <option>Opcion2</option>
-            // Agregar más opciones aquí
+          <select className="bg-zinc-950 text-white ml-2">
+            <option>100740648721</option>
+            <option>100596114563</option>
+            <option>102435563241</option>
           </select>
         </div>
-
-
-
-
-
-
-
-
         {/* Enlaces de navegación */}
         <div className="hidden md:flex items-center space-x-4">
           <img className="w-4 h-4 " src={casa} alt="" />
