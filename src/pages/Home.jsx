@@ -13,39 +13,11 @@ export function Home() {
                 <h3 className='containerText text-black text-2xl w-1/2'>Obtenga la más amplia gama de mercados, operaciones y plataformas</h3>
                 <button class="bg-red-500 text-white px-4 py-2 rounded-full h-20 text-xl font-semibold flex justify-center items-center">Crear una cuenta demo gratis</button>
             </div>
-            <div id="divbg" className="w-[calc(50%+50px)] flex item-end justify-end h-ful">
+            <div id="divbg" className="w-[calc(50%+50px)] flex item-end justify-center h-ful">
+                <img src="https://i.pinimg.com/originals/a2/95/0f/a2950faa53be5e2872037f1027fdfbe3.png"  alt="" />
             </div>
             <style>
                 {`
-                #divbg{
-                    background-size: contain;
-                    background-repeat: no-repeat;
-
-                    animation: cambioImagen 30s infinite linear;
-                }
-
-                @keyframes cambioImagen {
-                    0%, 100%{
-                        background-image: url(${Imagen1})
-                    }
-                    15%{
-                        background-image: url(${Imagen1})
-                      }
-                    40% {
-                        background-image: url(${Imagen3});
-                    }
-                    55% {
-                        background-image: url(${Imagen3});
-                      }
-                    60% {
-                        background-image: url(${Imagen3});
-                      }
-                    75% {
-                        background-image: url(${Imagen1});
-                    }
-                    
-                  }
-
                 .containerbg {
                  height:90vh;
                     width:100vw;
