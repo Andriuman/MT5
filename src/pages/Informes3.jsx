@@ -12,10 +12,10 @@ export function Informes3() {
         <div className='flex flex-col w-full'>
             <div className="w-full flex text-2xl font-bold justify-center">Informes</div>
             <div className="flex flex-row ">
-                <div className="w-1/4 bg-zinc-950 text-white p-4">
+                <div className="w-[20vw] bg-zinc-950 text-white p-4">
                     <Menu activeOption={"HOLA"} />
                 </div>
-                <div className="pt-10 flex 2-auto flex-col gap-5 justify-center items-center">
+                <div className="pt-10 flex 2-auto flex-col gap-5 justify-center items-center w-[70vw]">
                     <div className="flex flex-row items-end w-full justify-end gap-3">
                         <button className='flex flex-row items-center gap-3 pl-10 pr-10 pt-1 pb-1 border border-white rounded'>
                             <img className='w-4 h-4' src={Calendario} alt="" />
